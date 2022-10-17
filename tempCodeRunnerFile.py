@@ -1,5 +1,10 @@
-voting_data = [{"county":"Arapahoe", "registered_voters": 422829},
-                {"county":"Denver", "registered_voters": 463353},
-                {"county":"Jefferson", "registered_voters": 432438}]
-for county_dict in voting_data:
-    print(county_dict['county'])
+# Assign a variable for the file to load and the path.
+file_to_load = 'Resources/election_results.csv'
+
+# Open the election results and read the file.
+election_data = open(file_to_load, 'r')
+
+# To do: perform analysis.
+
+# Close the file.
+election_data.close()
