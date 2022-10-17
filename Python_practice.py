@@ -208,3 +208,101 @@ voting_data = [{"county":"Arapahoe", "registered_voters": 422829},
 for county_dict in voting_data:
     print(county_dict['county'])
 
+#Repetition Statements
+#While Loop
+x = 0
+while x <= 5:
+    print(x)
+    x = x + 1
+
+
+#While Loop Practice 
+count = 7
+
+while count < 1:
+
+    print("Hello World")
+#nothing printed b/c condition is false on the first test
+
+#Nested If Else Practice
+#What is the score?
+score = int(input("What is your test score? "))
+
+# Determine the grade.
+if score >= 90:
+    print('Your grade is an A.')
+else:
+    if score >= 80:
+        print('Your grade is a B.')
+    else:
+        if score >= 70:
+            print('Your grade is a C.')
+        else:
+            if score >= 60:
+                print('Your grade is a D.')
+            else:
+                print('Your grade is an F.')
+
+
+
+
+# What is the score?
+score = int(input("What is your test score? "))
+
+# Determine the grade.
+if score >= 90:
+    print('Your grade is an A.')
+elif score >= 80:
+    print('Your grade is a B.')
+elif score >= 70:
+    print('Your grade is a C.')
+elif score >= 60:
+    print('Your grade is a D.')
+else:
+    print('Your grade is an F.')
+
+
+
+#3.4.1 Dependencies - datetime
+#get today's date
+# Import the datetime class from the datetime module.
+import datetime
+# Use the now() attribute on the datetime class to get the present time.
+now = datetime.datetime.now()
+# Print the present time.
+print("The time right now is ", now)
+
+#updated code for today's date 
+# Import the datetime class from the datetime module.
+import datetime as dt
+# Use the now() attribute on the datetime class to get the present time.
+now = dt.datetime.now()
+# Print the present time.
+print("The time right now is ", now)
+
+# 3.4.3
+#Direct Load CSV
+# Assign a variable for the file to load and the path.
+file_to_load = 'Resources\election_results.csv'
+
+# Open the election results and read the file.
+with open(file_to_load) as election_data:
+
+     # To do: perform analysis.
+     print(election_data)
+
+
+#Indirect Load CSV
+import csv
+import os
+# Assign a variable for the file to load and the path.
+file_to_load = os.path.join("Resources", "election_results.csv")
+# Open the election results and read the file.
+with open(file_to_load) as election_data:
+
+    # Print the file object.
+     print(election_data)
+
+
+
+
