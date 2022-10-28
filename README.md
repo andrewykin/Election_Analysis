@@ -9,7 +9,7 @@ The Colorado Board of Elections wanted us to create a Python script to find the 
 - The percentage of votes each candidate won.
 - The winner of the election based on popular vote.
 
-### Election Audit Results
+## Election Audit Results
 
 ![VSCode_Terminal_Output](Resources/VSCode_Terminal_Output.png)
 
@@ -28,7 +28,7 @@ The Colorado Board of Elections wanted us to create a Python script to find the 
 - Which candidate won the election, what was their vote count, and what was their percentage of the total votes?
   - Diana DeGette won with 272,892 votes, which was 73.8% of the total votes.
 
-### Election Audit Summary
+## Election Audit Summary
 
 We audited a US Congressional District in Colorado, this code could be modified to automate the process in other Congressional Districts, Senatorial Districts, & other local elections.
 Additionally, we could modify the Python script to also tabulate additional information like the number or percentage of voters from a specific political group or gender that voted for each candidate based on their Ballot ID from the election_results.csv file.
